@@ -3,6 +3,8 @@ import requests
 import lxml
 from bs4 import BeautifulSoup
 from cummon import request_chat_completion, print_streaming_response
+import sys
+sys.path.append('/home/adminuser/venv/lib/python3.12/site-packages')
 
 def crawl_naver_science(url):
     response = requests.get(url)
